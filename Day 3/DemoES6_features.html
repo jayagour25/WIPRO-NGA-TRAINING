@@ -1,0 +1,32 @@
+<!-- Expanding arrays or object via spread Operator into individual elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // Example of Spread Operator with Arrays
+        const numbers = [1, 2, 3];
+        const newNumbers = [...numbers, 4, 5, 6];
+        console.log("New Numbers Array:", newNumbers); // Output: [1, 2, 3, 4, 5, 6]
+
+        // Example of Spread Operator with Objects
+        const person = { name: "Alice", age: 25 };
+        const updatedPerson = { ...person, city: "New York" };
+        console.log("Updated Person Object:", updatedPerson); // Output: { name: "Alice", age: 25, city: "New York" }
+    </script>
+
+    <!-- You can try creating a Student object and add ID to it -->
+    <script>
+        const student = { name: "Bob", age: 20 };
+        const updatedStudent = { ...student, id: 123 };
+        console.log("Updated Student Object:", updatedStudent); // Output: { name: "Bob", age: 20, id: 123 }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management System (ES6 Demo)</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafc;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077cc;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    #output {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .skills span {
+      background: #e3f2fd;
+      color: #0077cc;
+      padding: 5px 10px;
+      border-radius: 8px;
+      margin: 3px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Student Management System (ES6 Demo)</h1>
+
+  <button id="runDemo">Run Assignment Demo</button>
+  <div id="output"></div>
+
+  <script>
+    // ============================================================
+    // 1️⃣ Use of let and const
+    // ============================================================
+    const instituteName = "Modern Institute of Technology";
+    let courseName = "Full Stack Web Development (ES6)";
+
+    // ============================================================
+    // 2️⃣ Use of Spread Operator (...)
+    // ============================================================
+    const coreSubjects = ["HTML", "CSS", "JavaScript"];
+    const advancedSubjects = ["React", "Node.js", "MongoDB"];
+    const allSubjects = [...coreSubjects, ...advancedSubjects];
+
+    // ============================================================
+    // 3️⃣ Use of Arrow Function
+    // ============================================================
+    const greet = (name) => `Welcome, ${name}! We're excited to have you at ${instituteName}.`;
+
+    // ============================================================
+    // 4️⃣ Use of Class
+    // ============================================================
+    class Student {
+      constructor(name, age, skills) {
+        this.name = name;
+        this.age = age;
+        this.skills = new Set(skills); // ensures unique skills automatically
+      }
+
+      // Method that returns formatted HTML for display
+      display() {
+        return `
+          <strong>Name:</strong> ${this.name}<br>
+          <strong>Age:</strong> ${this.age}<br>
+          <strong>Skills:</strong> ${[...this.skills].map(skill => `<span>${skill}</span>`).join(" ")}
+        `;
+      }
+    }
+
+    // Create Student Objects
+    const student1 = new Student("Alice Johnson", 21, ["HTML", "CSS", "JavaScript", "CSS"]);
+    const student2 = new Student("Bob Smith", 22, ["React", "Node.js", "JavaScript", "React"]);
+
+    // ============================================================
+    // 5️⃣ Use of Map Object
+    // ============================================================
+    const studentGrades = new Map();
+    studentGrades.set("Alice Johnson", "A");
+    studentGrades.set("Bob Smith", "B+");
+
+    // ============================================================
+    // 6️⃣ Dynamic Output Display
+    // ============================================================
+    const runDemo = () => {
+      const output = document.getElementById("output");
+
+      output.innerHTML = `
+        <div class="section">
+          <h2>Institute & Course Information</h2>
+          <p><strong>Institute:</strong> ${instituteName}</p>
+          <p><strong>Course:</strong> ${courseName}</p>
+        </div>
+
+        <div class="section">
+          <h2>Subjects</h2>
+          <p><strong>Core Subjects:</strong> ${coreSubjects.join(", ")}</p>
+          <p><strong>Advanced Subjects:</strong> ${advancedSubjects.join(", ")}</p>
+          <p><strong>All Subjects (via Spread Operator):</strong> ${allSubjects.join(", ")}</p>
+        </div>
+
+        <div class="section">
+          <h2>Greeting (Arrow Function)</h2>
+          <p>${greet(student1.name)}</p>
+        </div>
+
+        <div class="section">
+          <h2>Student Details (Class Example)</h2>
+          <div>${student1.display()}</div>
+          <hr>
+          <div>${student2.display()}</div>
+        </div>
+
+        <div class="section">
+          <h2>Student Grades (Map Object)</h2>
+          <ul>
+            ${Array.from(studentGrades.entries())
+              .map(([name, grade]) => `<li>${name}: ${grade}</li>`)
+              .join("")}
+          </ul>
+        </div>
+      `;
+    };
+
+    // ============================================================
+    // 7️⃣ Button Trigger
+    // ============================================================
+    document.getElementById("runDemo").addEventListener("click", runDemo);
+  </script>
+</body>
+</html>
