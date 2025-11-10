@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Todo App - Fetch API Assignment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    h2 {
+      color: #333;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+    .post, .todo {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+    }
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>📘 Blog Posts & ✅ Todo List</h1>
+
+  <div class="section" id="postsSection">
+    <h2>Blog Posts</h2>
+    <div id="posts"></div>
+    <div id="postsError" class="error"></div>
+  </div>
+
+  <div class="section" id="todosSection">
+    <h2>Todo List</h2>
+    <div id="todos"></div>
+    <div id="todosError" class="error"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

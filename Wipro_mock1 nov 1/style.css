@@ -1,0 +1,28 @@
+:root{
+  --primary:#5b21b6; /* purple */
+  --accent:#0ea5a4;  /* teal */
+  --muted:#f3f4f6;
+}
+
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--muted);
+  color:#111827;
+}
+
+/* header */
+.site-header{
+  background: linear-gradient(120deg,var(--primary), #0b5dd7);
+  color: white;
+}
+
+/* card images */
+.card-img-top{
+  height: 180px;
+  object-fit: cover;
+}
+
+/* small screens tweaks */
+@media (max-width:575px){
+  .card-img-top{height:140px;}
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "e1",
+    "title": "Music Fiesta 2025",
+    "category": "Music",
+    "date": "2025-11-15",
+    "summary": "An electrifying night with top DJs and bands.",
+    "long": "Join us for a night of live music featuring top artists, light shows, and food stalls.",
+    "image": "https://source.unsplash.com/600x400/?concert"
+  },
+  {
+    "id": "e2",
+    "title": "Business Networking",
+    "category": "Business",
+    "date": "2025-10-05",
+    "summary": "Meet industry leaders and grow your network.",
+    "long": "Panels, speed-networking, and mentorship sessions.",
+    "image": "https://source.unsplash.com/600x400/?seminar"
+  },
+  {
+    "id": "e3",
+    "title": "Royal Wedding Expo",
+    "category": "Wedding",
+    "date": "2025-12-20",
+    "summary": "Design the wedding of your dreams with top vendors.",
+    "long": "Exhibitions from decorators, photographers, and venues.",
+    "image": "https://source.unsplash.com/600x400/?wedding"
+  },
+  {
+    "id": "e4",
+    "title": "Cultural Fest 2025",
+    "category": "Festival",
+    "date": "2025-09-25",
+    "summary": "A celebration of art, food and dance.",
+    "long": "Street performers, folk music, and local cuisine.",
+    "image": "https://source.unsplash.com/600x400/?festival"
+  }
+]
