@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "690c4711cd090be0cf9e6311"
+  },
+  "title": "Harry Potter and the Sorcerer's Stone",
+  "genre": "Fantasy",
+  "publicationYear": 1966,
+  "authorId": {
+    "$oid": "690c4701cd090be0cf9e6301"
+  },
+  "ratings": [
+    {
+      "user": "Alice",
+      "score": 5,
+      "comment": "Amazing book!"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "690c4712cd090be0cf9e6312"
+  },
+  "title": "A Game of Thrones",
+  "genre": "Fantasy",
+  "publicationYear": 1996,
+  "authorId": {
+    "$oid": "690c4702cd090be0cf9e6302"
+  },
+  "ratings": [
+    {
+      "user": "Bob",
+      "score": 4,
+      "comment": "Great story."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "690c4713cd090be0cf9e6313"
+  },
+  "title": "Murder on the Orient Express",
+  "genre": "Mystery",
+  "publicationYear": 1934,
+  "authorId": {
+    "$oid": "690c4703cd090be0cf9e6303"
+  },
+  "ratings": [
+    {
+      "user": "Charlie",
+      "score": 5,
+      "comment": "Classic mystery."
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "690c4716cd090be0cf9e6316"
+  },
+  "title": "Dune",
+  "genre": "Science Fiction",
+  "publicationYear": 1965,
+  "authorId": {
+    "$oid": "690c4704cd090be0cf9e6304"
+  },
+  "ratings": [
+    {
+      "user": "Alice",
+      "score": 5,
+      "comment": "Epic story!"
+    }
+  ]
+}]

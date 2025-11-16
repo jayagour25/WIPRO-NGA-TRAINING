@@ -1,0 +1,52 @@
+CRUD QUERIES:
+// Insert a user
+db.users.insertOne({
+  "_id": ObjectId("690c4724cd090be0cf9e6324"),
+  "name": "David",
+  "email": "david@example.com",
+  "joinDate": "2023-04-01"
+})
+
+// Read all Science Fiction books
+db.books.find({ "genre": "Science Fiction" })
+
+// Update publication year
+db.books.updateOne(
+  { "title": "Dune" },
+  { "$set": { "publicationYear": 1966 } }
+)
+
+// Delete a user
+db.users.deleteOne({ "name": "David" })
+
+// Add a rating to a book
+db.books.updateOne(
+  { "title": "Dune" },
+  { "$push": { "ratings": { "user": "Alice", "score": 5, "comment": "Epic story!" } } }
+)
+
+
+Filter / Aggregation Queries:
+
+// Books published after 2015
+db.books.find({ "publicationYear": { "$gt": 2015 } })
+
+// Fantasy authors
+db.authors.find({ "_id": { "$in": [ObjectId("690c4701cd090be0cf9e6301")] } })
+
+// Users joined in last 6 months
+db.users.find({ "joinDate": { "$gte": "2023-05-06" } })
+
+// Books with average rating > 4
+db.books.aggregate([
+  { "$unwind": "$ratings" },
+  { "$group": {
+      "_id": "$_id",
+      "title": { "$first": "$title" },
+      "avgRating": { "$avg": "$ratings.score" }
+    }
+  },
+  { "$match": { "avgRating": { "$gt": 4 } } }
+])
+
+

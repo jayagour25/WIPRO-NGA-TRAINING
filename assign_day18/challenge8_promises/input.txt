@@ -1,0 +1,2 @@
+This is input file for promise-based copy.
+This is for daily practice assignment.

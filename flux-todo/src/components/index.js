@@ -3,8 +3,3 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App'; // ✅ Use the correct path
-
-ReactDOM.render(<App />, document.getElementById('root'));

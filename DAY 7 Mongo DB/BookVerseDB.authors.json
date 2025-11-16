@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "690c4701cd090be0cf9e6301"
+  },
+  "name": "J.K. Rowling",
+  "nationality": "British",
+  "birthYear": 1965
+},
+{
+  "_id": {
+    "$oid": "690c4702cd090be0cf9e6302"
+  },
+  "name": "George R.R. Martin",
+  "nationality": "American",
+  "birthYear": 1948
+},
+{
+  "_id": {
+    "$oid": "690c4703cd090be0cf9e6303"
+  },
+  "name": "Agatha Christie",
+  "nationality": "British",
+  "birthYear": 1890
+}]
