@@ -1,0 +1,41 @@
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 30px;
+}
+
+.pkg-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.pkg-card:hover {
+  transform: translateY(-6px);
+}
+
+.pkg-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.pkg-card h3 {
+  margin: 18px;
+  color: var(--primary);
+}
+
+.pkg-card p {
+  margin: 0 18px 15px;
+  color: #5a4c72;
+}
+
+.pkg-card .info {
+  margin: 0 18px 18px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--primary-light);
+}

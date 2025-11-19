@@ -1,0 +1,31 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "title": "Paris Getaway",
+      "price": 899,
+      "days": 5,
+      "rating": 4.7,
+      "image": "https://picsum.photos/seed/paris/600/400",
+      "description": "Explore the City of Lights with guided tours and river cruise."
+    },
+    {
+      "id": 2,
+      "title": "Bali Retreat",
+      "price": 749,
+      "days": 6,
+      "rating": 4.8,
+      "image": "https://picsum.photos/seed/bali/600/400",
+      "description": "Beachside villas, waterfalls, and temples\u2014perfect for relaxation."
+    },
+    {
+      "id": 3,
+      "title": "Swiss Alps Adventure",
+      "price": 1099,
+      "days": 7,
+      "rating": 4.9,
+      "image": "https://picsum.photos/seed/swiss/600/400",
+      "description": "Scenic train rides, hiking, and chocolate tasting in Switzerland."
+    }
+  ]
+}

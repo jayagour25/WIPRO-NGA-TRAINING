@@ -1,23 +1,22 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./Header.css";
 
 export default function Header() {
+  const { pathname } = useLocation();
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div className="container">
-        <NavLink className="navbar-brand" to="/home">Travel Booking</NavLink>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div id="nav" className="collapse navbar-collapse">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item"><NavLink className="nav-link" to="/home">Home</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/packages">Packages</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/contact">Contact</NavLink></li>
-            <li className="nav-item"><NavLink className="nav-link" to="/dashboard">Dashboard</NavLink></li>
-          </ul>
-        </div>
+    <header className="navbar">
+      <div className="nav-container">
+        <div className="logo">TravelX</div>
+
+        <nav>
+          <Link to="/" className={pathname === "/" ? "active" : ""}>Home</Link>
+          <Link to="/packages" className={pathname === "/packages" ? "active" : ""}>Packages</Link>
+          <Link to="/contact" className={pathname === "/contact" ? "active" : ""}>Contact</Link>
+          <Link to="/dashboard" className={pathname === "/dashboard" ? "active" : ""}>Dashboard</Link>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }

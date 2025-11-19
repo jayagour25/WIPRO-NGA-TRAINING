@@ -1,0 +1,43 @@
+.card-wrapper {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.card-wrapper:hover {
+  transform: translateY(-6px);
+}
+
+.card-wrapper img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h4 {
+  margin: 0;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.wish-btn {
+  background: var(--secondary);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.wish-btn:hover {
+  opacity: 0.8;
+}

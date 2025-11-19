@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+/* ------------------------------ */
+/* GLOBAL THEME — PURPLE PREMIUM  */
+/* ------------------------------ */
+:root {
+  --primary: #7b2cbf;
+  --primary-light: #9d4edd;
+  --secondary: #f72585;
+  --dark: #1f1b24;
+  --light: #ffffff;
+  --background: #f8f5fc;
+  --text: #3a2e4d;
+
+  --shadow: 0 6px 20px rgba(92, 46, 120, 0.2);
+  --transition: 0.3s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Layout container */
+.container {
+  width: 92%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Buttons */
+.btn-primary-custom {
+  background: var(--primary);
+  padding: 12px 22px;
+  border-radius: 8px;
   color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary-custom:hover {
+  background: var(--primary-light);
 }
