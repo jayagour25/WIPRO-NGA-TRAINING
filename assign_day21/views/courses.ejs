@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SkillSphere LMS - Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .courses-container {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Available Courses</h1>
+
+  <div class="courses-container">
+    <% if (courses && courses.length > 0) { %>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Course Title</th>
+            <th>Level</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% courses.forEach(course => { %>
+            <tr>
+              <td><%= course.id %></td>
+              <td><%= course.title %></td>
+              <td><%= course.level %></td>
+              <td><%= course.duration %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } else { %>
+      <p>No courses available at the moment.</p>
+    <% } %>
+  </div>
+
+  <div class="footer">
+    <p>SkillSphere LMS &copy; <%= new Date().getFullYear() %></p>
+  </div>
+</body>
+</html>
