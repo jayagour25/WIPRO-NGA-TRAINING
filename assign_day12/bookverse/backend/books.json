@@ -1,0 +1,7 @@
+{
+  "books": [
+    { "id": 1, "title": "Atomic Habits", "author": "James Clear", "price": 350, "description": "A guide to building habits." },
+    { "id": 2, "title": "The Alchemist", "author": "Paulo Coelho", "price": 290, "description": "A journey of self-discovery." },
+    { "id": 3, "title": "Deep Work", "author": "Cal Newport", "price": 450, "description": "How to focus without distraction." }
+  ]
+}

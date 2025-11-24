@@ -1,13 +1,15 @@
 {
   "dependencies": {
     "express": "^5.1.0",
-    "flux": "^4.0.4"
+    "flux": "^4.0.4",
+    "formik": "^2.4.9",
+    "react-router-dom": "^7.9.6",
+    "yup": "^1.7.1"
   },
   "name": "wipro-nga-training",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
