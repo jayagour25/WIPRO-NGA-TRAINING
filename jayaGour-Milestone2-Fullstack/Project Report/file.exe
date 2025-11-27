@@ -1,0 +1,94 @@
+Milestone 2 – React Product Dashboard with Express Backend
+
+Introduction
+
+This project is a small full-stack application built using React for the frontend and Express.js for the backend.
+The goal of the project is to display a list of products, view a product’s details, and add new products using a form.
+The backend stores the data in a simple JSON file.
+The frontend communicates with the backend using API calls.
+
+The project follows all three user stories mentioned in the assessment.
+
+Project Objective
+
+The purpose of the project is to understand:
+• how to build components in React
+• how to use React Router for navigation
+• how to handle forms using Formik and Yup
+• how to manage data using Context API
+• how to build a backend API using Express
+• how to connect React with an API
+
+Technologies Used
+
+Frontend: React, React Router, Bootstrap, Formik, Yup
+Backend: Node.js, Express.js
+Data: JSON file (products.json)
+
+Features Developed
+1. Product List Page
+
+The main page shows a list of products.
+Each product is displayed inside a card with its name, price and category.
+Clicking on “View Details” opens the product detail page.
+
+2. Product Detail Page
+
+When a product is clicked, the detail page shows all information about that product.
+The details are loaded using the product ID from the backend API.
+This page is lazy-loaded to improve performance.
+
+3. Add Product Page
+
+This page contains a form where users can add a new product.
+Formik is used to control the form and Yup is used to validate the inputs.
+After submitting the form, the new product is stored in the backend JSON file through a POST API.
+The application redirects back to the product list and shows the new product.
+
+4. API Integration
+
+The backend provides three API routes:
+• GET /products – returns all products
+• GET /products/:id – returns a single product
+• POST /products – adds a new product
+The frontend uses Axios to call these APIs.
+
+5. Context API
+
+Context API is used to store the product list globally.
+When a new product is added, the list updates automatically without reloading the page.
+
+Backend Explanation
+
+The backend is created using Express.
+It reads and writes data from a JSON file just like a simple database.
+This makes it easy to test GET and POST requests without using real databases.
+The backend runs on port 5000.
+
+Frontend Explanation
+
+The frontend is created using create-react-app.
+React Router helps in switching between pages.
+Bootstrap is used to style the pages.
+Formik and Yup make the form easy to handle with validation.
+Axios is used for API communication.
+
+How the System Works
+
+The backend starts first and serves the API.
+
+The frontend loads and sends a GET request to the backend.
+
+The backend sends back product data.
+
+When a product is added from the form, a POST request is sent.
+
+The backend stores the new product in the JSON file.
+
+The frontend updates the product list automatically.
+
+Conclusion
+
+This project helped in understanding how the frontend and backend work together.
+It covers important concepts like routing, state management, API handling, form validation, and lazy loading.
+The application is simple, easy to use, and fulfills all the user stories given in the Milestone-2 assessment.

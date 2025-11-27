@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 55000,
+    "category": "Electronics",
+    "description": "Lightweight laptop for students"
+  },
+  {
+    "id": 2,
+    "name": "Headphones",
+    "price": 2500,
+    "category": "Accessories",
+    "description": "Noise-isolating headphones"
+  },
+  {
+    "id": 3,
+    "name": "mobile",
+    "price": "25000",
+    "category": "Electronics",
+    "description": "mobiles"
+  }
+]
