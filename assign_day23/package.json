@@ -1,0 +1,14 @@
+{
+  "name": "day23-rest-api",
+  "version": "1.0.0",
+  "description": "Day 23 RESTful APIs & API Middleware assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.0",
+    "express-rate-limit": "^7.0.0",
+    "express-validator": "^7.0.0"
+  }
+}
